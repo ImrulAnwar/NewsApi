@@ -11,6 +11,7 @@ import com.example.newsapi.db.Entities.NewsResponse
 import com.example.newsapi.db.repositories.ArticleRepository
 import com.example.newsapi.util.Resource
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
@@ -37,8 +38,10 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
 
         val breakingNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
         var breakingNewsPage = 1
+        val searchNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
+        var searchNewsPage = 1
 
-        fun getBreakingNews(countryCode: String) {
+        fun getBreakingNews(countryCode: String){
                 viewModelScope.launch(Dispatchers.IO) {
                         breakingNews.postValue(Resource.Loading())
                         val response = repository.getBreakingNews(countryCode, breakingNewsPage)
@@ -46,8 +49,25 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
                 }
         }
 
+        fun searchNews(searchQuery: String) {
+                viewModelScope.launch(Dispatchers.IO){
+                        searchNews.postValue(Resource.Loading())
+                        val response =repository.searchNews(searchQuery, searchNewsPage)
+                        searchNews.postValue(handleSearchNewsResponse(response))
+                }
+
+        }
+
 
         private fun handleBreakingNewsResponse(response: Response<NewsResponse>) :Resource<NewsResponse>{
+                if (response.isSuccessful) {
+                        response.body()?.let {resultResponse->
+                                return Resource.Success(resultResponse)
+                        }
+                }
+                return Resource.Error(response.message())
+        }
+        private fun handleSearchNewsResponse(response: Response<NewsResponse>) :Resource<NewsResponse>{
                 if (response.isSuccessful) {
                         response.body()?.let {resultResponse->
                                 return Resource.Success(resultResponse)

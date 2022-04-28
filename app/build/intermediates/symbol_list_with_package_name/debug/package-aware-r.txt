@@ -2753,6 +2753,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id evSearch
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2912,6 +2913,7 @@ id password_toggle
 id path
 id pathRelative
 id pbPagination
+id pbSearch
 id peekHeight
 id percent
 id pin
@@ -2934,6 +2936,7 @@ id rounded
 id row_index_key
 id rtl
 id rvBreakingNews
+id rvSearch
 id save_non_transition_alpha
 id save_overlay_view
 id savedNewsFragment
@@ -3052,6 +3055,7 @@ id transition_transform
 id triangle
 id tvArticleDescription
 id tvArticleTitle
+id tvSource
 id unchecked
 id uniform
 id unlabeled

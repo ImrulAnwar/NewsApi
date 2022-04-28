@@ -32,12 +32,12 @@
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breaking_news.xml.flat",

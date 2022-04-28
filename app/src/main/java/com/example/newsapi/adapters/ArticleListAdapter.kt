@@ -50,6 +50,7 @@ class ArticleListAdapter : RecyclerView.Adapter<ArticleListAdapter.ArticleViewHo
                         Glide.with(this).load(currentArticle.urlToImage).into(ivArticleImage)
                         tvArticleTitle.text = currentArticle.title
                         tvArticleDescription.text = currentArticle.description
+                        tvSource.text = currentArticle.source.name
                         setOnClickListener{
 
                         }

@@ -40,7 +40,6 @@ class BreakingNewsFragment : Fragment() {
                                         response.data?.let { newsResponse ->
 //                                                adapter.differ.submitList(newsResponse.articles)
                                                 adapter.setData(newsResponse.articles)
-                                                Log.d(TAG, "List is : ${newsResponse.articles}")
                                         }
                                 }
                                 is Resource.Error -> {

@@ -28,4 +28,11 @@ class ArticleRepository(private val db: ArticleDatabase) {
                         pageNumber = pageNumber
                 )
         }
+
+        suspend fun searchNews(searchQuery: String, pageNumber: Int): Response<NewsResponse> {
+                return RetrofitInstance.api.searchForNews(
+                        searchQuery = searchQuery,
+                        pageNumber = pageNumber
+                )
+        }
 }

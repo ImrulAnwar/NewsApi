@@ -16,27 +16,41 @@
 
     <TextView
             android:text="TextView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tvArticleTitle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/ivArticleImage"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_marginStart="28dp" />
+            android:layout_marginStart="20sp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" />
 
     <TextView
             android:text="TextView"
-            android:layout_width="223dp"
-            android:layout_height="39dp"
+            android:layout_width="0dp"
+            android:layout_height="84dp"
             android:id="@+id/tvArticleDescription"
-            app:layout_constraintStart_toEndOf="@+id/ivArticleImage"
             app:layout_constraintTop_toBottomOf="@+id/tvArticleTitle"
             android:layout_marginTop="8dp"
-            android:layout_marginStart="28dp"
-            app:layout_constraintBottom_toBottomOf="@+id/ivArticleImage"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintBottom_toBottomOf="@+id/tvSource"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvArticleTitle" />
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/tvSource"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvArticleDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivArticleImage"
+            android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.381" />
 </androidx.constraintlayout.widget.ConstraintLayout>
