@@ -19,10 +19,16 @@ id articleFragment
 id bottomNavigationView
 id breakingNewsFragment
 id fragment
+id ivArticleImage
 id news_nav_graph
+id pbPagination
+id rvBreakingNews
 id savedNewsFragment
 id searchNewsFragment
+id tvArticleDescription
+id tvArticleTitle
 layout activity_main
+layout article_item
 layout fragment_article
 layout fragment_breaking_news
 layout fragment_saved_news

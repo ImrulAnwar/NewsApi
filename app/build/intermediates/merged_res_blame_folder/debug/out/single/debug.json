@@ -76,6 +76,10 @@
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\saved_news.xml"
     },
     {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\layout_article_item.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\layout\\article_item.xml"
+    },
+    {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },

@@ -1,13 +1,17 @@
-package com.example.newsapi.ui
+package com.example.newsapi.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.newsapi.R
+import com.example.newsapi.db.Entities.Article
+import com.example.newsapi.ui.ArticleViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+        private lateinit var mViewModel: ArticleViewModel
         override fun onCreate(savedInstanceState: Bundle?) {
                 super.onCreate(savedInstanceState)
                 setContentView(R.layout.activity_main)
@@ -16,5 +20,7 @@ class MainActivity : AppCompatActivity() {
                 val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment) as NavHostFragment
                 val navController = navHostFragment.navController
                 bottomNavigationView.setupWithNavController(navController)
+
+                mViewModel = ViewModelProvider(this)[ArticleViewModel::class.java]
         }
 }
