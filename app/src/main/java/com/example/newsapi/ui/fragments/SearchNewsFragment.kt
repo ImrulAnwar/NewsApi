@@ -35,7 +35,7 @@ class SearchNewsFragment : Fragment() {
                 // Inflate the layout for this fragment
                 val view = inflater.inflate(R.layout.fragment_search_news, container, false)
                 val recyclerView = view.rvSearch
-                adapter = ArticleListAdapter()
+                adapter = ArticleListAdapter(TAG)
                 recyclerView.adapter = adapter
                 recyclerView.layoutManager = LinearLayoutManager(requireContext())
                 mViewModel = ViewModelProvider(this)[ArticleViewModel::class.java]

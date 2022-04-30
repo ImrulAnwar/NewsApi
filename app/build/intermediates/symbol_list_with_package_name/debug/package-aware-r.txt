@@ -3075,6 +3075,7 @@ id withinBounds
 id wrap
 id wrap_content
 id wrap_content_constrained
+id wvArticle
 id x_left
 id x_right
 id zero_corner_chip

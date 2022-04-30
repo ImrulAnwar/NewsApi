@@ -10,6 +10,7 @@ import com.example.newsapi.R
 import com.example.newsapi.ui.ArticleViewModel
 
 class SavedNewsFragment : Fragment() {
+        private val TAG = "SavedNewsFragment"
         override fun onCreateView(
                 inflater: LayoutInflater, container: ViewGroup?,
                 savedInstanceState: Bundle?

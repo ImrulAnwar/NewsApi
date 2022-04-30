@@ -1,13 +1,13 @@
-#Fri Apr 29 02:43:34 BDT 2022
+#Sat Apr 30 20:48:58 BDT 2022
 path.4=15/classes.dex
 path.3=12/classes.dex
 path.2=10/classes.dex
 path.1=0/classes.dex
 renamed.8=classes9.dex
-path.8=5/classes.dex
-path.7=4/classes.dex
-path.6=7/classes.dex
-path.5=classes2.dex
+path.8=classes2.dex
+path.7=7/classes.dex
+path.6=5/classes.dex
+path.5=4/classes.dex
 path.0=classes.dex
 base.4=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
 base.3=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
@@ -19,10 +19,10 @@ renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 renamed.7=classes8.dex
-base.8=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.8=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 renamed.6=classes7.dex
-base.7=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.7=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
 renamed.5=classes6.dex
-base.6=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+base.6=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
 renamed.4=classes5.dex
-base.5=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.5=D\:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex

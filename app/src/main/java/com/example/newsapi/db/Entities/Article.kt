@@ -2,7 +2,7 @@ package com.example.newsapi.db.Entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.newsapi.db.Entities.Source
+import java.io.Serializable
 
 
 @Entity(
@@ -19,4 +19,4 @@ data class Article(
     val title: String,
     val url: String,
     val urlToImage: String
-)
+): Serializable

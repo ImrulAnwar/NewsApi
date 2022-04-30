@@ -28,7 +28,7 @@ class BreakingNewsFragment : Fragment() {
         ): View? {
                 val view = inflater.inflate(R.layout.fragment_breaking_news, container, false)
                 val recyclerView = view.rvBreakingNews
-                adapter = ArticleListAdapter()
+                adapter = ArticleListAdapter(TAG)
                 recyclerView.adapter = adapter
                 recyclerView.layoutManager = LinearLayoutManager(requireContext())
 

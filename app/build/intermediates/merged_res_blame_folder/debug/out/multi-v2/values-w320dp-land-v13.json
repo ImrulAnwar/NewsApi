@@ -4,7 +4,7 @@
             "outputFile": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\USER\\AndroidStudioProjects\\gradle\\caches\\transforms-3\\5423c65485a974611bfb437c61e9a2e1\\transformed\\material-1.5.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\USER\\AndroidStudioProjects\\gradle\\caches\\transforms-3\\bfe6c221e2a1e5751a091c18eaee03ff\\transformed\\material-1.5.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
