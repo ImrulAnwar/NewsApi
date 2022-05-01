@@ -33,13 +33,13 @@ class BreakingNewsFragment : Fragment() {
                 recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
                 mViewModel = ViewModelProvider(this)[ArticleViewModel::class.java]
-                mViewModel.getBreakingNews().observe(viewLifecycleOwner, Observer { response ->
+                mViewModel.getBreakingNews().observe(viewLifecycleOwner) { response ->
                         when (response) {
                                 is Resource.Success -> {
                                         hideProgressBar()
                                         response.data?.let { newsResponse ->
 //                                                adapter.differ.submitList(newsResponse.articles)
-                                                adapter.setData(newsResponse.articles)
+                                                adapter.setData(newsResponse.articles!!)
                                         }
                                 }
                                 is Resource.Error -> {
@@ -53,7 +53,7 @@ class BreakingNewsFragment : Fragment() {
                                 }
                         }
 
-                })
+                }
                 return view
         }
 

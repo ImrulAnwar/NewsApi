@@ -37,7 +37,7 @@ class ArticleFragment : Fragment() {
                 article = args.article
                 view.wvArticle.apply {
                         webViewClient = WebViewClient()
-                        loadUrl(article.url)
+                        loadUrl(article.url!!)
                 }
         }
 }

@@ -54,7 +54,7 @@ class ArticleListAdapter(val from: String) :
                         Glide.with(this).load(currentArticle.urlToImage).into(ivArticleImage)
                         tvArticleTitle.text = currentArticle.title
                         tvArticleDescription.text = currentArticle.description
-                        tvSource.text = currentArticle.source.name
+                        tvSource.text = currentArticle.source!!.name
                         setOnClickListener {
                                 val bundle = Bundle().apply {
                                         putSerializable("article", currentArticle)
