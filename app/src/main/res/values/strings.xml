@@ -5,4 +5,5 @@
     <string name="breaking_news">Breaking News</string>
     <string name="saved_news">Saved</string>
     <string name="search">Search</string>
+    <string name="favourite">Favourite</string>
 </resources>

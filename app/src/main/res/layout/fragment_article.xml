@@ -17,7 +17,9 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
             tools:ignore="SpeakableTextPresentCheck"
-            android:backgroundTint="#C20000" />
+            android:backgroundTint="#C20000"
+            android:contentDescription="@string/favourite"
+            android:focusable="true" />
 
     <WebView
             android:layout_width="match_parent"
@@ -25,6 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent"
+            android:fitsSystemWindows="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:id="@+id/wvArticle" >
