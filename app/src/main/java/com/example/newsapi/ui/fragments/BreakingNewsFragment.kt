@@ -6,13 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.newsapi.R
 import com.example.newsapi.adapters.ArticleListAdapter
 import com.example.newsapi.ui.ArticleViewModel
-import com.example.newsapi.ui.activities.MainActivity
 import com.example.newsapi.util.Resource
 import kotlinx.android.synthetic.main.fragment_breaking_news.*
 import kotlinx.android.synthetic.main.fragment_breaking_news.view.*
@@ -39,7 +37,7 @@ class BreakingNewsFragment : Fragment() {
                                         hideProgressBar()
                                         response.data?.let { newsResponse ->
 //                                                adapter.differ.submitList(newsResponse.articles)
-                                                adapter.setData(newsResponse.articles!!)
+                                                adapter.setData(newsResponse.articles)
                                         }
                                 }
                                 is Resource.Error -> {

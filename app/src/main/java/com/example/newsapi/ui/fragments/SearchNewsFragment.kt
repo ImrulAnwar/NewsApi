@@ -52,13 +52,13 @@ class SearchNewsFragment : Fragment() {
                         }
                 }
 
-                mViewModel.searchNews.observe(viewLifecycleOwner, Observer { response ->
+                mViewModel.searchNews.observe(viewLifecycleOwner) { response ->
                         when (response) {
                                 is Resource.Success -> {
                                         hideProgressBar()
                                         response.data?.let { newsResponse ->
 //                                                adapter.differ.submitList(newsResponse.articles)
-                                                adapter.setData(newsResponse.articles!!)
+                                                adapter.setData(newsResponse.articles)
                                                 Log.d(TAG, "List is : ${newsResponse.articles}")
                                         }
                                 }
@@ -73,7 +73,7 @@ class SearchNewsFragment : Fragment() {
                                 }
                         }
 
-                })
+                }
                 return view
         }
 

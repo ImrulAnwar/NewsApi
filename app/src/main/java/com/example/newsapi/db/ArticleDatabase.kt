@@ -8,7 +8,7 @@ import androidx.room.TypeConverters
 import com.example.newsapi.db.Entities.Article
 import com.google.android.play.core.install.model.AppUpdateType
 
-@Database(entities = [Article::class], version = 1)
+@Database(entities = [Article::class], version = 3)
 @TypeConverters(Converters::class)
 abstract class ArticleDatabase : RoomDatabase() {
         abstract fun getArticleDao(): ArticleDao
