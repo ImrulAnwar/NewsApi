@@ -10,6 +10,7 @@ color white
 drawable breaking_news
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable save
 drawable saved_news
 drawable search
 id action_breakingNewsFragment_to_articleFragment
@@ -19,12 +20,14 @@ id articleFragment
 id bottomNavigationView
 id breakingNewsFragment
 id evSearch
+id fabSaveArticle
 id fragment
 id ivArticleImage
 id news_nav_graph
 id pbPagination
 id pbSearch
 id rvBreakingNews
+id rvSavedNews
 id rvSearch
 id savedNewsFragment
 id searchNewsFragment

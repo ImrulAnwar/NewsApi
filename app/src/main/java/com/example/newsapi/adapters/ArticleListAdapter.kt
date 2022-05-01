@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.article_item.view.*
 
 class ArticleListAdapter(val from: String) :
         RecyclerView.Adapter<ArticleListAdapter.ArticleViewHolder>() {
-        private var items = emptyList<Article>()
+        var items = emptyList<Article>()
 
         inner class ArticleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
         //this is new
@@ -59,12 +59,11 @@ class ArticleListAdapter(val from: String) :
                                 val bundle = Bundle().apply {
                                         putSerializable("article", currentArticle)
                                 }
-                                if (from == "BreakingNewsFragment")
-                                        findNavController().navigate(R.id.action_breakingNewsFragment_to_articleFragment, bundle)
-                                else if (from == "SearchNewsFragment")
-                                        findNavController().navigate(R.id.action_searchNewsFragment_to_articleFragment, bundle)
-                                else if (from == "SavedNewsFragment")
-                                        findNavController().navigate(R.id.action_savedNewsFragment_to_articleFragment, bundle)
+                                when (from) {
+                                        "BreakingNewsFragment" -> findNavController().navigate(R.id.action_breakingNewsFragment_to_articleFragment, bundle)
+                                        "SearchNewsFragment" -> findNavController().navigate(R.id.action_searchNewsFragment_to_articleFragment, bundle)
+                                        "SavedNewsFragment" -> findNavController().navigate(R.id.action_savedNewsFragment_to_articleFragment, bundle)
+                                }
                         }
                 }
         }

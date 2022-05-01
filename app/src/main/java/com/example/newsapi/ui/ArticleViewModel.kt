@@ -11,51 +11,47 @@ import com.example.newsapi.db.Entities.NewsResponse
 import com.example.newsapi.db.repositories.ArticleRepository
 import com.example.newsapi.util.Resource
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
 class ArticleViewModel(application: Application) : AndroidViewModel(application) {
-        private val repository: ArticleRepository = ArticleRepository(ArticleDatabase.getDatabase(application))
-        init {
-                getBreakingNews("us")
-        }
-        fun upsert(item: Article) {
+        private val articleRepository: ArticleRepository = ArticleRepository(ArticleDatabase.getDatabase(application))
+        fun upsertArticle(item: Article) {
                 viewModelScope.launch(Dispatchers.IO) {
-                        repository.upsert(item)
+                        articleRepository.upsertArticle(item)
                 }
         }
 
-        fun delete(item: Article) {
+        fun deleteArticle(item: Article) {
                 viewModelScope.launch(Dispatchers.IO) {
-                        repository.delete(item)
+                        articleRepository.deleteArticle(item)
                 }
         }
 
-        fun getAllArticles(): LiveData<List<Article>> {
-                return repository.getAllArticles()
+        fun getSavedArticles(): LiveData<List<Article>> {
+                return articleRepository.getSavedArticles()
         }
 
-        val breakingNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
+        private val breakingNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
         var breakingNewsPage = 1
         val searchNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
         var searchNewsPage = 1
 
-        fun getBreakingNews(countryCode: String){
+        fun getBreakingNews(countryCode: String="us"): LiveData<Resource<NewsResponse>>{
                 viewModelScope.launch(Dispatchers.IO) {
                         breakingNews.postValue(Resource.Loading())
-                        val response = repository.getBreakingNews(countryCode, breakingNewsPage)
+                        val response = articleRepository.getBreakingNews(countryCode, breakingNewsPage)
                         breakingNews.postValue(handleBreakingNewsResponse(response))
                 }
+                return breakingNews
         }
 
         fun searchNews(searchQuery: String) {
                 viewModelScope.launch(Dispatchers.IO){
                         searchNews.postValue(Resource.Loading())
-                        val response =repository.searchNews(searchQuery, searchNewsPage)
+                        val response =articleRepository.searchNews(searchQuery, searchNewsPage)
                         searchNews.postValue(handleSearchNewsResponse(response))
                 }
-
         }
 
 

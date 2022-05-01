@@ -7,11 +7,11 @@ import com.example.newsapi.db.Entities.Article
 @Dao
 interface ArticleDao {
         @Insert(onConflict = OnConflictStrategy.REPLACE)
-        suspend fun upsert(article: Article): Long
+        suspend fun upsertArticle(article: Article): Long
 
         @Query("SELECT * FROM Article_Table")
-        fun getAllArticles(): LiveData<List<Article>>
+        fun getSavedArticles(): LiveData<List<Article>>
 
         @Delete
-        suspend fun delete(article: Article)
+        suspend fun deleteArticle(article: Article)
 }

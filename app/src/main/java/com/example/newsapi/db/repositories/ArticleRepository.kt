@@ -9,16 +9,16 @@ import retrofit2.Response
 
 class ArticleRepository(private val db: ArticleDatabase) {
         //from room
-        fun getAllArticles(): LiveData<List<Article>> {
-                return db.getArticleDao().getAllArticles()
+        fun getSavedArticles(): LiveData<List<Article>> {
+                return db.getArticleDao().getSavedArticles()
         }
 
-        suspend fun upsert(item: Article) {
-                db.getArticleDao().upsert(item)
+        suspend fun upsertArticle(item: Article) {
+                db.getArticleDao().upsertArticle(item)
         }
 
-        suspend fun delete(item: Article) {
-                db.getArticleDao().delete(item)
+        suspend fun deleteArticle(item: Article) {
+                db.getArticleDao().deleteArticle(item)
         }
 
         //from api

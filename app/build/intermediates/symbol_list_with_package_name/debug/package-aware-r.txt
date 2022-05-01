@@ -2558,6 +2558,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable save
 drawable saved_news
 drawable search
 drawable test_custom_background
@@ -2757,6 +2758,7 @@ id evSearch
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabSaveArticle
 id fade
 id fill
 id fill_horizontal
@@ -2936,6 +2938,7 @@ id rounded
 id row_index_key
 id rtl
 id rvBreakingNews
+id rvSavedNews
 id rvSearch
 id save_non_transition_alpha
 id save_overlay_view

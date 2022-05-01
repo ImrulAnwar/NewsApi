@@ -6,6 +6,19 @@
         android:layout_height="match_parent"
         tools:context=".ui.fragments.ArticleFragment">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:src="@drawable/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/fabSaveArticle"
+            app:layout_constraintBottom_toBottomOf="@+id/wvArticle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:backgroundTint="#C20000" />
+
     <WebView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -14,5 +27,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:id="@+id/wvArticle" />
+            android:id="@+id/wvArticle" >
+
+    </WebView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

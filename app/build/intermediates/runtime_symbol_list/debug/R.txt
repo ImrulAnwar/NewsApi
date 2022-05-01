@@ -2557,6 +2557,7 @@ int drawable notification_template_icon_bg 0x7f070096
 int drawable notification_template_icon_low_bg 0x7f070097
 int drawable notification_tile_bg 0x7f070098
 int drawable notify_panel_notification_icon_bg 0x7f070099
+int drawable save 0x7f0700a0
 int drawable saved_news 0x7f07009a
 int drawable search 0x7f07009b
 int drawable test_custom_background 0x7f07009c
@@ -2756,6 +2757,7 @@ int id evSearch 0x7f0800bd
 int id exitUntilCollapsed 0x7f0800be
 int id expand_activities_button 0x7f0800bf
 int id expanded_menu 0x7f0800c0
+int id fabSaveArticle 0x7f080204
 int id fade 0x7f0800c1
 int id fill 0x7f0800c2
 int id fill_horizontal 0x7f0800c3
@@ -2935,6 +2937,7 @@ int id rounded 0x7f080170
 int id row_index_key 0x7f080171
 int id rtl 0x7f080172
 int id rvBreakingNews 0x7f080173
+int id rvSavedNews 0x7f080205
 int id rvSearch 0x7f080174
 int id save_non_transition_alpha 0x7f080175
 int id save_overlay_view 0x7f080176
