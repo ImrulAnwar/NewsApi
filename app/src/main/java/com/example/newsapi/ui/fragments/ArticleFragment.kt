@@ -22,6 +22,7 @@ class ArticleFragment : Fragment() {
         private lateinit var mViewModel: ArticleViewModel
         val args by navArgs<ArticleFragmentArgs>()
         private lateinit var article: Article
+
         @SuppressLint("SetJavaScriptEnabled")
         override fun onCreateView(
                 inflater: LayoutInflater,
@@ -32,6 +33,7 @@ class ArticleFragment : Fragment() {
                 val view = inflater.inflate(R.layout.fragment_article, container, false)
                 mViewModel  = ViewModelProvider(this)[ArticleViewModel::class.java]
                 article = args.article
+
                 view.wvArticle.apply {
                         webViewClient = WebViewClient()
                         loadUrl(article.url)

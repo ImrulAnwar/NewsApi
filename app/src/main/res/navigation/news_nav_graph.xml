@@ -12,10 +12,7 @@
             tools:layout="@layout/fragment_breaking_news" >
         <action
                 android:id="@+id/action_breakingNewsFragment_to_articleFragment"
-                app:destination="@id/articleFragment"
-                app:enterAnim="@android:anim/slide_in_left"
-                app:exitAnim="@android:anim/slide_out_right"
-                app:popEnterAnim="@android:anim/slide_in_left" />
+                app:destination="@id/articleFragment" />
     </fragment>
     <fragment
             android:id="@+id/searchNewsFragment"
@@ -24,8 +21,7 @@
             tools:layout="@layout/fragment_search_news" >
         <action
                 android:id="@+id/action_searchNewsFragment_to_articleFragment"
-                app:destination="@id/articleFragment"
-                app:enterAnim="@android:anim/slide_in_left" />
+                app:destination="@id/articleFragment" />
     </fragment>
     <fragment
             android:id="@+id/savedNewsFragment"
