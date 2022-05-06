@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -96,7 +97,7 @@ class SearchNewsFragment : Fragment() {
                                 is Resource.Error -> {
                                         hideProgressBar()
                                         response.message?.let { message ->
-                                                Log.e(TAG, "An Error occurred: $message")
+                                                Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
                                         }
                                 }
                                 is Resource.Loading -> {

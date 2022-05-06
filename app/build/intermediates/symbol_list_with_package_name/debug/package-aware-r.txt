@@ -3033,6 +3033,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3311,6 +3312,7 @@ string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string article
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string breaking_news

@@ -1,6 +1,10 @@
 package com.example.newsapi.ui
 
 import android.app.Application
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
+import android.os.Build
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -16,6 +20,7 @@ import com.example.newsapi.util.Resource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.Response
+import java.io.IOException
 
 class ArticleViewModel(application: Application) : AndroidViewModel(application) {
         private val articleRepository: ArticleRepository =
@@ -47,20 +52,16 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
 
         fun getBreakingNews(countryCode: String = "us"): LiveData<Resource<NewsResponse>> {
                 viewModelScope.launch(Dispatchers.IO) {
-                        breakingNews.postValue(Resource.Loading())
-                        val response =
-                                articleRepository.getBreakingNews(countryCode, breakingNewsPage)
-                        breakingNews.postValue(handleBreakingNewsResponse(response))
+                        safeBreakingNewsCall(countryCode)
                 }
                 return breakingNews
         }
 
-        fun getSearchNews(searchQuery: String) {
+        fun getSearchNews(searchQuery: String): MutableLiveData<Resource<NewsResponse>> {
                 viewModelScope.launch(Dispatchers.IO) {
-                        searchNews.postValue(Resource.Loading())
-                        val response = articleRepository.searchNews(searchQuery, searchNewsPage)
-                        searchNews.postValue(handleSearchNewsResponse(response))
+                        safeSearchNewsCall(searchQuery)
                 }
+                return searchNews
         }
 
 
@@ -116,5 +117,74 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
                 val isNotAtBeginning = firstVisibleItemPosition >= 0
                 val isTotalMoreThanVisible = totalCount >= Constants.QUERY_PAGE_SIZE
                 return isNotLoadingAndNotAtLastPage && isAtLastItem && isNotAtBeginning && isTotalMoreThanVisible && isScrolling
+        }
+
+        private fun hasInternetConnection(): Boolean {
+                val connectivityManager =
+                        getApplication<Application>().getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        val activeNetwork = connectivityManager.activeNetwork ?: return false
+                        val capabilities = connectivityManager.getNetworkCapabilities(activeNetwork)
+                                ?: return false
+                        return when {
+                                capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
+                                capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
+                                capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) -> true
+                                else -> false
+                        }
+                } else {
+                        connectivityManager.activeNetworkInfo?.run {
+                                when (type) {
+                                        ConnectivityManager.TYPE_WIFI -> true
+                                        ConnectivityManager.TYPE_MOBILE -> true
+                                        ConnectivityManager.TYPE_ETHERNET -> true
+                                        else -> false
+                                }
+                        }
+                }
+                return false
+        }
+
+        private suspend fun safeBreakingNewsCall(countryCode: String) {
+                breakingNews.postValue(Resource.Loading())
+                try {
+                        if (hasInternetConnection()) {
+                                val response =
+                                        articleRepository.getBreakingNews(
+                                                countryCode,
+                                                breakingNewsPage
+                                        )
+                                breakingNews.postValue(handleBreakingNewsResponse(response))
+                        } else {
+                                breakingNews.postValue(Resource.Error("No Internet Connection"))
+                        }
+                } catch (t: Throwable) {
+                        when (t) {
+                                is IOException -> breakingNews.postValue(Resource.Error("Network Failure"))
+                                else -> breakingNews.postValue(Resource.Error("Conversion Error"))
+                        }
+                }
+        }
+        private suspend fun safeSearchNewsCall(searchQuery: String) {
+                // change searchNews, searchNewsPage, searchQuery
+                searchNews.postValue(Resource.Loading())
+                try {
+                        if (hasInternetConnection()) {
+                                val response =
+                                        articleRepository.getSearchNews(
+                                                searchQuery,
+                                                searchNewsPage
+                                        )
+                                searchNews.postValue(handleSearchNewsResponse(response))
+                                searchNews.postValue(handleSearchNewsResponse(response))
+                        } else {
+                                searchNews.postValue(Resource.Error("No Internet Connection"))
+                        }
+                } catch (t: Throwable) {
+                        when (t) {
+                                is IOException -> searchNews.postValue(Resource.Error("Network Failure"))
+                                else -> searchNews.postValue(Resource.Error("Conversion Error"))
+                        }
+                }
         }
 }

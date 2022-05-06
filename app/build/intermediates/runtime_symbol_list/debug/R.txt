@@ -3032,6 +3032,7 @@ int id textSpacerNoButtons 0x7f0801ce
 int id textSpacerNoTitle 0x7f0801cf
 int id textStart 0x7f0801d0
 int id textTop 0x7f0801d1
+int id textView 0x7f080205
 int id text_input_end_icon 0x7f0801d2
 int id text_input_error_icon 0x7f0801d3
 int id text_input_start_icon 0x7f0801d4
@@ -3310,6 +3311,7 @@ int string abc_toolbar_collapse_description 0x7f11001a
 int string androidx_startup 0x7f11001b
 int string app_name 0x7f11001c
 int string appbar_scrolling_view_behavior 0x7f11001d
+int string article 0x7f110091
 int string bottom_sheet_behavior 0x7f11001e
 int string bottomsheet_action_expand_halfway 0x7f11001f
 int string breaking_news 0x7f110020

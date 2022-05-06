@@ -33,6 +33,7 @@ id rvSavedNews
 id rvSearch
 id savedNewsFragment
 id searchNewsFragment
+id textView
 id tvArticleDescription
 id tvArticleTitle
 id tvSource
@@ -48,6 +49,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation news_nav_graph
 string app_name
+string article
 string breaking_news
 string favourite
 string hello_blank_fragment
