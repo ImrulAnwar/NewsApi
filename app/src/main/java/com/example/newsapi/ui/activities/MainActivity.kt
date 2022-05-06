@@ -24,14 +24,14 @@ class MainActivity : AppCompatActivity() {
                 val navController = navHostFragment.navController
                 bottomNavigationView.setupWithNavController(navController)
 
-                val appBarConfiguration = AppBarConfiguration(
-                        setOf(
-                                R.id.savedNewsFragment,
-                                R.id.searchNewsFragment,
-                                R.id.breakingNewsFragment
-                        )
-                )
-                setupActionBarWithNavController(navController, appBarConfiguration)
+//                val appBarConfiguration = AppBarConfiguration(
+//                        setOf(
+//                                R.id.savedNewsFragment,
+//                                R.id.searchNewsFragment,
+//                                R.id.breakingNewsFragment
+//                        )
+//                )
+//                setupActionBarWithNavController(navController, appBarConfiguration)
 
                 mViewModel = ViewModelProvider(this)[ArticleViewModel::class.java]
         }
