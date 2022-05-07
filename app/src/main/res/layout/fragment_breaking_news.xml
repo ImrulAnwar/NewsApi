@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/pbPagination"
+            android:id="@+id/pbBreakingNews"
             app:layout_constraintTop_toTopOf="@+id/rvBreakingNews"
             android:layout_marginTop="32dp"
             app:layout_constraintHorizontal_bias="0.498" />

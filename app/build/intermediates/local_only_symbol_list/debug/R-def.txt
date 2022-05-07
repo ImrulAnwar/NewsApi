@@ -29,14 +29,17 @@ id articleFragment
 id bottomNavigationView
 id breakingNewsFragment
 id categoriesFragment
+id categoryListFragment
 id evSearch
 id fabSaveArticle
 id fragment
 id ivArticleImage
 id news_nav_graph
-id pbPagination
+id pbBreakingNews
+id pbCategories
 id pbSearch
 id rvBreakingNews
+id rvCategories
 id rvSavedNews
 id rvSearch
 id savedNewsFragment
@@ -51,6 +54,7 @@ layout article_item
 layout fragment_article
 layout fragment_breaking_news
 layout fragment_categories
+layout fragment_category_list
 layout fragment_saved_news
 layout fragment_search_news
 menu bottom_navigation_menu

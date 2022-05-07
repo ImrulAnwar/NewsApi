@@ -2687,6 +2687,7 @@ id cancel_action
 id cancel_button
 id carryVelocity
 id categoriesFragment
+id categoryListFragment
 id center
 id center_horizontal
 id center_vertical
@@ -2924,7 +2925,8 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
-id pbPagination
+id pbBreakingNews
+id pbCategories
 id pbSearch
 id peekHeight
 id percent
@@ -2948,6 +2950,7 @@ id rounded
 id row_index_key
 id rtl
 id rvBreakingNews
+id rvCategories
 id rvSavedNews
 id rvSearch
 id save_non_transition_alpha
@@ -3201,6 +3204,7 @@ layout dynamic_feature_install_fragment
 layout fragment_article
 layout fragment_breaking_news
 layout fragment_categories
+layout fragment_category_list
 layout fragment_saved_news
 layout fragment_search_news
 layout m3_alert_dialog

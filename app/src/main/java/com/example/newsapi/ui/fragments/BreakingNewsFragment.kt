@@ -1,7 +1,6 @@
 package com.example.newsapi.ui.fragments
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -87,12 +86,12 @@ class BreakingNewsFragment : Fragment() {
         }
 
         private fun hideProgressBar() {
-                pbPagination.visibility = View.INVISIBLE
+                pbBreakingNews.visibility = View.INVISIBLE
                 isLoading = false
         }
 
         private fun showProgressBar() {
-                pbPagination.visibility = View.VISIBLE
+                pbBreakingNews.visibility = View.VISIBLE
                 isLoading = true
         }
 

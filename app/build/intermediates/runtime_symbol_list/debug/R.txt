@@ -2686,6 +2686,7 @@ int id cancel_action 0x7f08006d
 int id cancel_button 0x7f08006e
 int id carryVelocity 0x7f08006f
 int id categoriesFragment 0x7f080209
+int id categoryListFragment 0x7f08020a
 int id center 0x7f080070
 int id center_horizontal 0x7f080071
 int id center_vertical 0x7f080072
@@ -2923,7 +2924,8 @@ int id parent_matrix 0x7f080159
 int id password_toggle 0x7f08015a
 int id path 0x7f08015b
 int id pathRelative 0x7f08015c
-int id pbPagination 0x7f08015d
+int id pbBreakingNews 0x7f08020b
+int id pbCategories 0x7f08020c
 int id pbSearch 0x7f08015e
 int id peekHeight 0x7f08015f
 int id percent 0x7f080160
@@ -2947,6 +2949,7 @@ int id rounded 0x7f080171
 int id row_index_key 0x7f080172
 int id rtl 0x7f080173
 int id rvBreakingNews 0x7f080174
+int id rvCategories 0x7f08020d
 int id rvSavedNews 0x7f080175
 int id rvSearch 0x7f080176
 int id save_non_transition_alpha 0x7f080177
@@ -3200,6 +3203,7 @@ int layout dynamic_feature_install_fragment 0x7f0b002e
 int layout fragment_article 0x7f0b002f
 int layout fragment_breaking_news 0x7f0b0030
 int layout fragment_categories 0x7f0b0083
+int layout fragment_category_list 0x7f0b0084
 int layout fragment_saved_news 0x7f0b0031
 int layout fragment_search_news 0x7f0b0032
 int layout m3_alert_dialog 0x7f0b0033
