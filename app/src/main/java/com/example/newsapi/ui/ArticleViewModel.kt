@@ -23,6 +23,13 @@ import retrofit2.Response
 import java.io.IOException
 
 class ArticleViewModel(application: Application) : AndroidViewModel(application) {
+        private val breakingNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
+        var breakingNewsPage = 1
+        val searchNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
+        var searchNewsPage = 1
+        private var breakingNewsResponse: NewsResponse? = null
+        var searchNewsResponse: NewsResponse? = null
+
         private val articleRepository: ArticleRepository =
                 ArticleRepository(ArticleDatabase.getDatabase(application))
 
@@ -41,13 +48,6 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
         fun getSavedArticles(): LiveData<List<Article>> {
                 return articleRepository.getSavedArticles()
         }
-
-        private val breakingNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
-        var breakingNewsPage = 1
-        val searchNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
-        var searchNewsPage = 1
-        private var breakingNewsResponse: NewsResponse? = null
-        var searchNewsResponse: NewsResponse? = null
 
 
         fun getBreakingNews(countryCode: String = "us"): LiveData<Resource<NewsResponse>> {
@@ -149,11 +149,7 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
                 breakingNews.postValue(Resource.Loading())
                 try {
                         if (hasInternetConnection()) {
-                                val response =
-                                        articleRepository.getBreakingNews(
-                                                countryCode,
-                                                breakingNewsPage
-                                        )
+                                val response = articleRepository.getBreakingNews(countryCode, breakingNewsPage)
                                 breakingNews.postValue(handleBreakingNewsResponse(response))
                         } else {
                                 breakingNews.postValue(Resource.Error("No Internet Connection"))

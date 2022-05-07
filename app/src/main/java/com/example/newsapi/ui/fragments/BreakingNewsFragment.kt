@@ -33,14 +33,12 @@ class BreakingNewsFragment : Fragment() {
         ): View? {
                 val view = inflater.inflate(R.layout.fragment_breaking_news, container, false)
                 val recyclerView = view.rvBreakingNews
+                mViewModel = ViewModelProvider(this)[ArticleViewModel::class.java]
                 adapter = ArticleListAdapter(TAG)
                 recyclerView.adapter = adapter
                 recyclerView.layoutManager = LinearLayoutManager(requireContext())
                 recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-                        override fun onScrollStateChanged(
-                                recyclerView: RecyclerView,
-                                newState: Int
-                        ) {
+                        override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                                 super.onScrollStateChanged(recyclerView, newState)
                                 if (newState == AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
                                         isScrolling = true
@@ -62,7 +60,6 @@ class BreakingNewsFragment : Fragment() {
                         }
                 })
 
-                mViewModel = ViewModelProvider(this)[ArticleViewModel::class.java]
                 mViewModel.getBreakingNews().observe(viewLifecycleOwner) { response ->
                         when (response) {
                                 is Resource.Success -> {
@@ -70,10 +67,8 @@ class BreakingNewsFragment : Fragment() {
                                         response.data?.let { newsResponse ->
 //                                                adapter.differ.submitList(newsResponse.articles)
                                                 adapter.setData(newsResponse.articles.toList())
-                                                val totalPages =
-                                                        newsResponse.totalResults / QUERY_PAGE_SIZE + 2
-                                                isLastPage =
-                                                        mViewModel.breakingNewsPage == totalPages
+                                                val totalPages = newsResponse.totalResults / QUERY_PAGE_SIZE + 2
+                                                isLastPage = mViewModel.breakingNewsPage == totalPages
                                         }
                                 }
                                 is Resource.Error -> {

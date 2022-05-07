@@ -2502,6 +2502,7 @@ int drawable btn_radio_off_mtrl 0x7f07005f
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070060
 int drawable btn_radio_on_mtrl 0x7f070061
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070062
+int drawable categories 0x7f0700a3
 int drawable design_fab_background 0x7f070063
 int drawable design_ic_visibility 0x7f070064
 int drawable design_ic_visibility_off 0x7f070065
@@ -2678,6 +2679,7 @@ int id callMeasure 0x7f08006c
 int id cancel_action 0x7f08006d
 int id cancel_button 0x7f08006e
 int id carryVelocity 0x7f08006f
+int id categoriesFragment 0x7f080209
 int id center 0x7f080070
 int id center_horizontal 0x7f080071
 int id center_vertical 0x7f080072
@@ -3191,6 +3193,7 @@ int layout design_text_input_start_icon 0x7f0b002d
 int layout dynamic_feature_install_fragment 0x7f0b002e
 int layout fragment_article 0x7f0b002f
 int layout fragment_breaking_news 0x7f0b0030
+int layout fragment_categories 0x7f0b0083
 int layout fragment_saved_news 0x7f0b0031
 int layout fragment_search_news 0x7f0b0032
 int layout m3_alert_dialog 0x7f0b0033
@@ -3315,16 +3318,20 @@ int string article 0x7f110091
 int string bottom_sheet_behavior 0x7f11001e
 int string bottomsheet_action_expand_halfway 0x7f11001f
 int string breaking_news 0x7f110020
+int string business 0x7f110093
+int string categories 0x7f110092
 int string character_counter_content_description 0x7f110021
 int string character_counter_overflowed_content_description 0x7f110022
 int string character_counter_pattern 0x7f110023
 int string chip_text 0x7f110024
 int string clear_text_end_icon_content_description 0x7f110025
+int string entertainment 0x7f110094
 int string error_icon_content_description 0x7f110026
 int string exposed_dropdown_menu_content_description 0x7f110027
 int string fab_transformation_scrim_behavior 0x7f110028
 int string fab_transformation_sheet_behavior 0x7f110029
 int string favourite 0x7f11002a
+int string health 0x7f110095
 int string hello_blank_fragment 0x7f11002b
 int string hide_bottom_view_on_scroll_behavior 0x7f11002c
 int string icon_content_description 0x7f11002d
@@ -3424,9 +3431,12 @@ int string path_password_strike_through 0x7f11008a
 int string progress 0x7f11008b
 int string retry 0x7f11008c
 int string saved_news 0x7f11008d
+int string science 0x7f110096
 int string search 0x7f11008e
 int string search_menu_title 0x7f11008f
+int string sports 0x7f110097
 int string status_bar_notification_info_overflow 0x7f110090
+int string technology 0x7f110098
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style AndroidThemeColorAccentYellow 0x7f120002

@@ -10,6 +10,7 @@ color white
 drawable background
 drawable bottom_toolbar_background
 drawable breaking_news
+drawable categories
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable save
@@ -21,6 +22,7 @@ id action_searchNewsFragment_to_articleFragment
 id articleFragment
 id bottomNavigationView
 id breakingNewsFragment
+id categoriesFragment
 id evSearch
 id fabSaveArticle
 id fragment
@@ -42,6 +44,7 @@ layout activity_main
 layout article_item
 layout fragment_article
 layout fragment_breaking_news
+layout fragment_categories
 layout fragment_saved_news
 layout fragment_search_news
 menu bottom_navigation_menu
@@ -51,9 +54,16 @@ navigation news_nav_graph
 string app_name
 string article
 string breaking_news
+string business
+string categories
+string entertainment
 string favourite
+string health
 string hello_blank_fragment
 string saved_news
+string science
 string search
+string sports
+string technology
 style Theme.NewsAPI
 style TitleBarTextAppearance

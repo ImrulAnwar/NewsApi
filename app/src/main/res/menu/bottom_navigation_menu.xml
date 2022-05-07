@@ -14,4 +14,8 @@
             android:title="@string/search"
             android:icon="@drawable/search"
             android:id="@+id/searchNewsFragment" />
+    <item
+            android:title="@string/categories"
+            android:icon="@drawable/categories"
+            android:id="@+id/categoriesFragment" />
 </menu>

@@ -41,4 +41,9 @@
                 android:name="article"
                 app:argType="com.example.newsapi.db.Entities.Article" />
     </fragment>
+    <fragment
+            android:id="@+id/categoriesFragment"
+            android:name="com.example.newsapi.ui.fragments.CategoriesFragment"
+            android:label="fragment_categories"
+            tools:layout="@layout/fragment_categories" />
 </navigation>

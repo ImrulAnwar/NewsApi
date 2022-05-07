@@ -1,11 +1,15 @@
 [
     {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_save.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\save.xml"
+    },
+    {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_breaking_news.xml.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\breaking_news.xml"
     },
     {
-        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_save.xml.flat",
-        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\save.xml"
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_categories.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\categories.xml"
     },
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -70,6 +74,10 @@
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_categories.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\layout\\fragment_categories.xml"
     },
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",

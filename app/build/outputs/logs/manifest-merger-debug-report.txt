@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-25:12
 MERGED from [androidx.room:room-ktx:2.4.2] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\09d44e7811a5360d4b1b76dea5903877\transformed\room-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\517abc54a26778aa731e572ca98c5dc8\transformed\navigation-fragment-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.4.2] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\c08d675cd115a616badcd9b3bddc04d9\transformed\navigation-dynamic-features-fragment-2.4.2\AndroidManifest.xml:17:1-24:12
@@ -76,20 +76,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0-beta01] C:\Users\U
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\ca8d86cc1b55725d28e0367ff9452017\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\4f316ba416b4f301ef5ec3be7213fc78\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.play:core:1.10.2] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\45cc913f79cfe0cced880bc4addaa01f\transformed\core-1.10.2\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:3:9-38
 		INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:2:11-69
@@ -97,8 +97,12 @@ uses-permission#android.permission.INTERNET
 ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:6:5-22:19
+ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:7:5-23:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\bfe6c221e2a1e5751a091c18eaee03ff\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\bfe6c221e2a1e5751a091c18eaee03ff\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\ddaa67b70f9dd91338daa33a15f31f16\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -126,33 +130,33 @@ MERGED from [com.google.android.play:core:1.10.2] C:\Users\USER\AndroidStudioPro
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\USER\AndroidStudioProjects\gradle\caches\transforms-3\1ada65ab756241f29671603be4209941\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:11:13-39
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:12:13-39
 	android:label
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:9:13-45
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:10:13-45
 	android:roundIcon
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:10:13-58
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:11:13-58
 	android:icon
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:8:13-47
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:9:13-47
 	android:allowBackup
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:7:13-39
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:8:13-39
 	android:theme
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:12:13-49
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:13:13-49
 activity#com.example.newsapi.ui.activities.MainActivity
-ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:13:9-21:20
+ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:14:9-22:20
 	android:exported
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:15:17-40
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:16:17-40
 	android:name
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:14:17-59
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:15:17-59
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\AndroidStudio Projects\NewsAPI\app\src\main\AndroidManifest.xml
