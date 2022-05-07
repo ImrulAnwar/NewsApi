@@ -30,9 +30,13 @@ class ArticleRepository(private val db: ArticleDatabase) {
         }
 
         suspend fun getSearchNews(searchQuery: String, pageNumber: Int): Response<NewsResponse> {
-                return RetrofitInstance.api.searchForNews(
+                return RetrofitInstance.api.getSearchNews(
                         searchQuery = searchQuery,
                         pageNumber = pageNumber
                 )
+        }
+
+        suspend fun getCategorizedNews(category: String): Response<NewsResponse> {
+                return RetrofitInstance.api.getCategorizedNews(category = category)
         }
 }

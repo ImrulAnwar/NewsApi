@@ -24,11 +24,14 @@ import java.io.IOException
 
 class ArticleViewModel(application: Application) : AndroidViewModel(application) {
         private val breakingNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
-        var breakingNewsPage = 1
         val searchNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
+        val categorizedNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
+        var breakingNewsPage = 1
         var searchNewsPage = 1
+        var categorizedNewsPage = 1
         private var breakingNewsResponse: NewsResponse? = null
         var searchNewsResponse: NewsResponse? = null
+        var categorizedNewsResponse: NewsResponse? =null
 
         private val articleRepository: ArticleRepository =
                 ArticleRepository(ArticleDatabase.getDatabase(application))
@@ -64,40 +67,13 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
                 return searchNews
         }
 
-
-        private fun handleBreakingNewsResponse(response: Response<NewsResponse>): Resource<NewsResponse> {
-                if (response.isSuccessful) {
-                        response.body()?.let { resultResponse ->
-                                breakingNewsPage++
-                                if (breakingNewsResponse == null) {
-                                        breakingNewsResponse = resultResponse
-                                } else {
-                                        val oldArticles = breakingNewsResponse?.articles
-                                        val newArticles = resultResponse.articles
-                                        oldArticles?.addAll(newArticles)
-                                }
-                                return Resource.Success(breakingNewsResponse ?: resultResponse)
-                        }
+        fun getCategorizedNews(category: String): MutableLiveData<Resource<NewsResponse>> {
+                viewModelScope.launch(Dispatchers.IO){
+                        safeCategorizedNewsCall(category)
                 }
-                return Resource.Error(response.message())
+                return categorizedNews
         }
 
-        private fun handleSearchNewsResponse(response: Response<NewsResponse>): Resource<NewsResponse> {
-                if (response.isSuccessful) {
-                        response.body()?.let { resultResponse ->
-                                searchNewsPage++
-                                if (searchNewsResponse == null) {
-                                        searchNewsResponse = resultResponse
-                                } else {
-                                        val oldArticles = searchNewsResponse?.articles
-                                        val newArticles = resultResponse.articles
-                                        oldArticles?.addAll(newArticles)
-                                }
-                                return Resource.Success(searchNewsResponse ?: resultResponse)
-                        }
-                }
-                return Resource.Error(response.message())
-        }
 
         fun shouldPaginate(
                 recyclerView: RecyclerView,
@@ -161,6 +137,7 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
                         }
                 }
         }
+
         private suspend fun safeSearchNewsCall(searchQuery: String) {
                 // change searchNews, searchNewsPage, searchQuery
                 searchNews.postValue(Resource.Loading())
@@ -172,7 +149,6 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
                                                 searchNewsPage
                                         )
                                 searchNews.postValue(handleSearchNewsResponse(response))
-                                searchNews.postValue(handleSearchNewsResponse(response))
                         } else {
                                 searchNews.postValue(Resource.Error("No Internet Connection"))
                         }
@@ -182,5 +158,73 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
                                 else -> searchNews.postValue(Resource.Error("Conversion Error"))
                         }
                 }
+        }
+        private suspend fun safeCategorizedNewsCall(category: String) {
+                categorizedNews.postValue(Resource.Loading())
+                try {
+                        if (hasInternetConnection()) {
+                                val response =
+                                        articleRepository.getCategorizedNews(category = category)
+                                categorizedNews.postValue(handleCategorizedNewsResponse(response))
+                        } else {
+                                categorizedNews.postValue(Resource.Error("No Internet Connection"))
+                        }
+                }catch (t: Throwable) {
+                        when (t) {
+                                is IOException -> categorizedNews.postValue(Resource.Error("Network Failure"))
+                                else -> categorizedNews.postValue(Resource.Error("Conversion Error"))
+                        }
+                }
+        }
+
+        private fun handleCategorizedNewsResponse(response: Response<NewsResponse>): Resource<NewsResponse>? {
+                if (response.isSuccessful) {
+                        response.body()?.let { resultResponse->
+                                categorizedNewsPage++
+                                if (categorizedNewsResponse == null) {
+                                        categorizedNewsResponse = resultResponse
+                                } else {
+                                        val oldArticles  = categorizedNewsResponse?.articles
+                                        val newArticles = resultResponse.articles
+                                        oldArticles?.addAll(newArticles)
+                                }
+                                return  Resource.Success(categorizedNewsResponse?:resultResponse)
+                        }
+                }
+                return Resource.Error(response.message())
+        }
+
+        private fun handleBreakingNewsResponse(response: Response<NewsResponse>): Resource<NewsResponse> {
+                if (response.isSuccessful) {
+                        response.body()?.let { resultResponse ->
+                                breakingNewsPage++
+                                if (breakingNewsResponse == null) {
+                                        breakingNewsResponse = resultResponse
+                                } else {
+                                        val oldArticles = breakingNewsResponse?.articles
+                                        val newArticles = resultResponse.articles
+                                        oldArticles?.addAll(newArticles)
+                                }
+                                return Resource.Success(breakingNewsResponse ?: resultResponse)
+                        }
+                }
+                return Resource.Error(response.message())
+        }
+
+        private fun handleSearchNewsResponse(response: Response<NewsResponse>): Resource<NewsResponse> {
+                if (response.isSuccessful) {
+                        response.body()?.let { resultResponse ->
+                                searchNewsPage++
+                                if (searchNewsResponse == null) {
+                                        searchNewsResponse = resultResponse
+                                } else {
+                                        val oldArticles = searchNewsResponse?.articles
+                                        val newArticles = resultResponse.articles
+                                        oldArticles?.addAll(newArticles)
+                                }
+                                return Resource.Success(searchNewsResponse ?: resultResponse)
+                        }
+                }
+                return Resource.Error(response.message())
         }
 }

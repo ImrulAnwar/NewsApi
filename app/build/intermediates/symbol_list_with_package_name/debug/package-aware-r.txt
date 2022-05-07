@@ -2503,12 +2503,15 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable business
 drawable categories
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable entertainment
+drawable health
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2563,7 +2566,10 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable save
 drawable saved_news
+drawable science
 drawable search
+drawable sports
+drawable technology
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark

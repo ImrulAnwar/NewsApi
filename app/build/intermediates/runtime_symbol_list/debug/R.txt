@@ -2502,12 +2502,15 @@ int drawable btn_radio_off_mtrl 0x7f07005f
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070060
 int drawable btn_radio_on_mtrl 0x7f070061
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070062
+int drawable business 0x7f0700a4
 int drawable categories 0x7f0700a3
 int drawable design_fab_background 0x7f070063
 int drawable design_ic_visibility 0x7f070064
 int drawable design_ic_visibility_off 0x7f070065
 int drawable design_password_eye 0x7f070066
 int drawable design_snackbar_background 0x7f070067
+int drawable entertainment 0x7f0700a5
+int drawable health 0x7f0700a6
 int drawable ic_clock_black_24dp 0x7f070068
 int drawable ic_keyboard_black_24dp 0x7f070069
 int drawable ic_launcher_background 0x7f07006a
@@ -2562,7 +2565,10 @@ int drawable notification_tile_bg 0x7f07009a
 int drawable notify_panel_notification_icon_bg 0x7f07009b
 int drawable save 0x7f07009c
 int drawable saved_news 0x7f07009d
+int drawable science 0x7f0700a7
 int drawable search 0x7f07009e
+int drawable sports 0x7f0700a8
+int drawable technology 0x7f0700a9
 int drawable test_custom_background 0x7f07009f
 int drawable test_level_drawable 0x7f0700a0
 int drawable tooltip_frame_dark 0x7f0700a1

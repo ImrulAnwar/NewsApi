@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_save.xml.flat",
-        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\save.xml"
-    },
-    {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_breaking_news.xml.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\breaking_news.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_save.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\save.xml"
     },
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_categories.xml.flat",
@@ -24,6 +24,10 @@
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_sports.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\sports.xml"
+    },
+    {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\navigation_news_nav_graph.xml.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\navigation\\news_nav_graph.xml"
     },
@@ -34,6 +38,10 @@
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_business.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\business.xml"
     },
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -52,6 +60,10 @@
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\layout\\fragment_breaking_news.xml"
     },
     {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_entertainment.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\entertainment.xml"
+    },
+    {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_navigation_menu.xml.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\menu\\bottom_navigation_menu.xml"
     },
@@ -62,6 +74,14 @@
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_science.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\science.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_health.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\health.xml"
     },
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -94,6 +114,10 @@
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_technology.xml.flat",
+        "source": "D:\\AndroidStudio Projects\\NewsAPI\\app\\src\\main\\res\\drawable\\technology.xml"
     },
     {
         "merged": "D:\\AndroidStudio Projects\\NewsAPI\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
