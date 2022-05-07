@@ -52,7 +52,7 @@
     </fragment>
     <fragment
             android:id="@+id/categoryListFragment"
-            android:name="com.example.newsapi.CategoryListFragment"
+            android:name="com.example.newsapi.ui.fragments.CategoryListFragment"
             android:label="fragment_category_list"
             tools:layout="@layout/fragment_category_list" >
         <action

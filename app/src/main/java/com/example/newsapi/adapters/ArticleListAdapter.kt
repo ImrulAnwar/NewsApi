@@ -18,7 +18,7 @@ class ArticleListAdapter(val from: String) :
         var items = emptyList<Article>()
 
         inner class ArticleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
-        //this is new
+        //this is new to me
         // to update only the items that is changed instead of "notifyDatasetsChanged()" method
 //        private val differCallback = object : DiffUtil.ItemCallback<Article>() {
 //                override fun areItemsTheSame(oldItem: Article, newItem: Article): Boolean {
@@ -63,7 +63,7 @@ class ArticleListAdapter(val from: String) :
                                         "BreakingNewsFragment" -> findNavController().navigate(R.id.action_breakingNewsFragment_to_articleFragment, bundle)
                                         "SearchNewsFragment" -> findNavController().navigate(R.id.action_searchNewsFragment_to_articleFragment, bundle)
                                         "SavedNewsFragment" -> findNavController().navigate(R.id.action_savedNewsFragment_to_articleFragment, bundle)
-                                        "CategoryListFragment" -> findNavController().navigate(R.id.action_savedNewsFragment_to_articleFragment, bundle)
+                                        "CategoryListFragment" -> findNavController().navigate(R.id.action_categoryListFragment_to_articleFragment, bundle)
                                 }
                         }
                 }

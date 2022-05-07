@@ -1,6 +1,7 @@
 package com.example.newsapi.ui.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -73,7 +74,7 @@ class BreakingNewsFragment : Fragment() {
                                 is Resource.Error -> {
                                         hideProgressBar()
                                         response.message?.let { message ->
-                                                Toast.makeText(requireContext(), message, Toast.LENGTH_LONG).show()
+                                                Toast.makeText(requireContext(), "Error: $message", Toast.LENGTH_LONG).show()
                                         }
                                 }
                                 is Resource.Loading -> {
