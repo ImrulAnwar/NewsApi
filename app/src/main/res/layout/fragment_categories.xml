@@ -45,6 +45,7 @@
                     android:layout_weight="1"
                     android:layout_margin="16dp"
                     android:backgroundTint="#1A191E"
+                    android:id="@+id/cvSports"
                     app:cardCornerRadius="30dp"
                     tools:ignore="NestedWeights">
 
@@ -72,6 +73,7 @@
                     android:layout_weight="1"
                     android:layout_margin="16dp"
                     android:backgroundTint="#1A191E"
+                    android:id="@+id/cvTechnology"
                     app:cardCornerRadius="30dp">
 
                 <TextView
@@ -107,6 +109,7 @@
                     android:layout_margin="16dp"
                     android:backgroundTint="#1A191E"
                     app:cardCornerRadius="30dp"
+                    android:id="@+id/cvScience"
                     tools:ignore="NestedWeights">
 
                 <TextView
@@ -133,6 +136,7 @@
                     android:layout_weight="1"
                     android:layout_margin="16dp"
                     android:backgroundTint="#1A191E"
+                    android:id="@+id/cvHealth"
                     app:cardCornerRadius="30dp">
 
                 <TextView
@@ -167,6 +171,7 @@
                     android:layout_weight="1"
                     android:layout_margin="16dp"
                     android:backgroundTint="#1A191E"
+                    android:id="@+id/cvBusiness"
                     app:cardCornerRadius="30dp"
                     tools:ignore="NestedWeights">
 
@@ -194,6 +199,7 @@
                     android:layout_weight="1"
                     android:layout_margin="16dp"
                     android:backgroundTint="#1A191E"
+                    android:id="@+id/cvEntertainment"
                     app:cardCornerRadius="30dp">
 
                 <TextView

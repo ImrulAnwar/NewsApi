@@ -2634,6 +2634,8 @@ id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
 id action_breakingNewsFragment_to_articleFragment
+id action_categoriesFragment_to_categoryListFragment
+id action_categoryListFragment_to_articleFragment
 id action_container
 id action_context_bar
 id action_divider
@@ -2724,6 +2726,12 @@ id currentState
 id custom
 id customPanel
 id cut
+id cvBusiness
+id cvEntertainment
+id cvHealth
+id cvScience
+id cvSports
+id cvTechnology
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3072,6 +3080,7 @@ id transition_transform
 id triangle
 id tvArticleDescription
 id tvArticleTitle
+id tvCategoryList
 id tvSource
 id unchecked
 id uniform

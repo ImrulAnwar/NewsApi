@@ -63,6 +63,7 @@ class ArticleListAdapter(val from: String) :
                                         "BreakingNewsFragment" -> findNavController().navigate(R.id.action_breakingNewsFragment_to_articleFragment, bundle)
                                         "SearchNewsFragment" -> findNavController().navigate(R.id.action_searchNewsFragment_to_articleFragment, bundle)
                                         "SavedNewsFragment" -> findNavController().navigate(R.id.action_savedNewsFragment_to_articleFragment, bundle)
+                                        "CategoryListFragment" -> findNavController().navigate(R.id.action_savedNewsFragment_to_articleFragment, bundle)
                                 }
                         }
                 }

@@ -23,6 +23,8 @@ drawable search
 drawable sports
 drawable technology
 id action_breakingNewsFragment_to_articleFragment
+id action_categoriesFragment_to_categoryListFragment
+id action_categoryListFragment_to_articleFragment
 id action_savedNewsFragment_to_articleFragment
 id action_searchNewsFragment_to_articleFragment
 id articleFragment
@@ -30,6 +32,12 @@ id bottomNavigationView
 id breakingNewsFragment
 id categoriesFragment
 id categoryListFragment
+id cvBusiness
+id cvEntertainment
+id cvHealth
+id cvScience
+id cvSports
+id cvTechnology
 id evSearch
 id fabSaveArticle
 id fragment
@@ -47,6 +55,7 @@ id searchNewsFragment
 id textView
 id tvArticleDescription
 id tvArticleTitle
+id tvCategoryList
 id tvSource
 id wvArticle
 layout activity_main

@@ -15,7 +15,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/textView"
+            android:id="@+id/tvCategoryList"
             android:textColor="@color/white"
             android:textAlignment="center"
             app:layout_constraintTop_toTopOf="parent"
@@ -32,7 +32,7 @@
             android:paddingTop="32dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:id="@+id/rvCategories"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoryList" />
 
     <ProgressBar
             style="?android:attr/progressBarStyle"

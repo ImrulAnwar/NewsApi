@@ -2633,6 +2633,8 @@ int id action_bar_spinner 0x7f080038
 int id action_bar_subtitle 0x7f080039
 int id action_bar_title 0x7f08003a
 int id action_breakingNewsFragment_to_articleFragment 0x7f08003b
+int id action_categoriesFragment_to_categoryListFragment 0x7f08020e
+int id action_categoryListFragment_to_articleFragment 0x7f08020f
 int id action_container 0x7f08003c
 int id action_context_bar 0x7f08003d
 int id action_divider 0x7f08003e
@@ -2723,6 +2725,12 @@ int id currentState 0x7f080090
 int id custom 0x7f080091
 int id customPanel 0x7f080092
 int id cut 0x7f080093
+int id cvBusiness 0x7f080210
+int id cvEntertainment 0x7f080211
+int id cvHealth 0x7f080212
+int id cvScience 0x7f080213
+int id cvSports 0x7f080214
+int id cvTechnology 0x7f080215
 int id date_picker_actions 0x7f080094
 int id decelerate 0x7f080095
 int id decelerateAndComplete 0x7f080096
@@ -3071,6 +3079,7 @@ int id transition_transform 0x7f0801e9
 int id triangle 0x7f0801ea
 int id tvArticleDescription 0x7f0801eb
 int id tvArticleTitle 0x7f0801ec
+int id tvCategoryList 0x7f080216
 int id tvSource 0x7f0801ed
 int id unchecked 0x7f0801ee
 int id uniform 0x7f0801ef
