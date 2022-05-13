@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color ic_launcher_background
 color purple_200
 color purple_500
 color purple_700
@@ -14,7 +15,6 @@ drawable business
 drawable categories
 drawable entertainment
 drawable health
-drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable save
 drawable saved_news
@@ -68,6 +68,7 @@ layout fragment_saved_news
 layout fragment_search_news
 menu bottom_navigation_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation news_nav_graph
 string app_name

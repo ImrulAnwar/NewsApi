@@ -1321,6 +1321,7 @@ int color foreground_material_dark 0x7f05005b
 int color foreground_material_light 0x7f05005c
 int color highlighted_text_material_dark 0x7f05005d
 int color highlighted_text_material_light 0x7f05005e
+int color ic_launcher_background 0x7f050254
 int color m3_appbar_overlay_color 0x7f05005f
 int color m3_assist_chip_icon_tint_color 0x7f050060
 int color m3_assist_chip_stroke_color 0x7f050061
@@ -2513,7 +2514,6 @@ int drawable entertainment 0x7f0700a5
 int drawable health 0x7f0700a6
 int drawable ic_clock_black_24dp 0x7f070068
 int drawable ic_keyboard_black_24dp 0x7f070069
-int drawable ic_launcher_background 0x7f07006a
 int drawable ic_launcher_foreground 0x7f07006b
 int drawable ic_m3_chip_check 0x7f07006c
 int drawable ic_m3_chip_checked_circle 0x7f07006d
@@ -3299,6 +3299,7 @@ int menu bottom_navigation_menu 0x7f0c0000
 int menu example_menu 0x7f0c0001
 int menu example_menu2 0x7f0c0002
 int mipmap ic_launcher 0x7f0d0000
+int mipmap ic_launcher_foreground 0x7f0d0002
 int mipmap ic_launcher_round 0x7f0d0001
 int navigation news_nav_graph 0x7f0e0000
 int plurals mtrl_badge_content_description 0x7f0f0000

@@ -36,7 +36,7 @@ class ArticleFragment : Fragment() {
 
                 view.wvArticle.apply {
                         webViewClient = WebViewClient()
-                        loadUrl(article.url)
+                        loadUrl(article.url!!)
                         // to fit the webView to the screen
                         settings.loadWithOverviewMode = true
                         settings.useWideViewPort = true

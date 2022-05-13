@@ -177,7 +177,7 @@ class ArticleViewModel(application: Application) : AndroidViewModel(application)
                 }
         }
 
-        private fun handleCategorizedNewsResponse(response: Response<NewsResponse>): Resource<NewsResponse>? {
+        private fun handleCategorizedNewsResponse(response: Response<NewsResponse>): Resource<NewsResponse> {
                 if (response.isSuccessful) {
                         response.body()?.let { resultResponse->
                                 categorizedNewsPage++
