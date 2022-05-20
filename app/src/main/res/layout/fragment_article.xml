@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragments.ArticleFragment">
+        tools:context=".feature_news.ui.activity_main.fragments.ArticleFragment">
 
     <TextView
             android:text="@string/article"

@@ -1,4 +1,4 @@
-package com.example.newsapi.api
+package com.example.newsapi.feature_news.data.api
 
 import com.example.newsapi.util.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient

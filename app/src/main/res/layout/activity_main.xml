@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:background="#1A191E"
         android:layout_height="match_parent"
-        tools:context=".ui.activities.MainActivity">
+        tools:context=".feature_news.ui.activity_main.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
             android:name="androidx.navigation.fragment.NavHostFragment"

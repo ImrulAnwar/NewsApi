@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#1A191E"
-        tools:context=".ui.fragments.BreakingNewsFragment">
+        tools:context=".feature_news.ui.activity_main.fragments.BreakingNewsFragment">
 
     <TextView
             android:text="@string/breaking_news"

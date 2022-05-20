@@ -12,7 +12,7 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.NewsAPI">
         <activity
-                android:name=".ui.activities.MainActivity"
+                android:name="com.example.newsapi.feature_news.ui.activity_main.MainActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

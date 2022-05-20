@@ -1,4 +1,4 @@
-package com.example.newsapi.ui
+package com.example.newsapi.feature_news.ui
 
 import android.app.Application
 import android.content.Context
@@ -11,10 +11,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.newsapi.db.ArticleDatabase
-import com.example.newsapi.db.Entities.Article
-import com.example.newsapi.db.Entities.NewsResponse
-import com.example.newsapi.db.repositories.ArticleRepository
+import com.example.newsapi.feature_news.data.db.ArticleDatabase
+import com.example.newsapi.feature_news.data.entities.Article
+import com.example.newsapi.feature_news.data.entities.NewsResponse
+import com.example.newsapi.feature_news.data.repo.ArticleRepository
 import com.example.newsapi.util.Constants
 import com.example.newsapi.util.Resource
 import kotlinx.coroutines.Dispatchers

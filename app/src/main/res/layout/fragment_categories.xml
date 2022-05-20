@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#1A191E"
-        tools:context=".ui.fragments.CategoriesFragment">
+        tools:context=".feature_news.ui.activity_main.fragments.CategoriesFragment">
 
     <TextView
             android:text="@string/categories"

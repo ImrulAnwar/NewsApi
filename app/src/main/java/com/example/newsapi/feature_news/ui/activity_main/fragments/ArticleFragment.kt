@@ -1,4 +1,4 @@
-package com.example.newsapi.ui.fragments
+package com.example.newsapi.feature_news.ui.activity_main.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -6,16 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.activity.OnBackPressedCallback
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import com.example.newsapi.R
-import com.example.newsapi.db.Entities.Article
-import com.example.newsapi.ui.ArticleViewModel
+import com.example.newsapi.feature_news.data.entities.Article
+import com.example.newsapi.feature_news.ui.ArticleViewModel
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_article.view.*
 
 class ArticleFragment : Fragment() {

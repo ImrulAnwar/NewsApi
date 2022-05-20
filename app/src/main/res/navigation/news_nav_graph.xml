@@ -7,7 +7,7 @@
 
     <fragment
             android:id="@+id/breakingNewsFragment"
-            android:name="com.example.newsapi.ui.fragments.BreakingNewsFragment"
+            android:name="com.example.newsapi.feature_news.ui.activity_main.fragments.BreakingNewsFragment"
             android:label="Breaking News"
             tools:layout="@layout/fragment_breaking_news" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
             android:id="@+id/searchNewsFragment"
-            android:name="com.example.newsapi.ui.fragments.SearchNewsFragment"
+            android:name="com.example.newsapi.feature_news.ui.activity_main.fragments.SearchNewsFragment"
             android:label="Search"
             tools:layout="@layout/fragment_search_news" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
             android:id="@+id/savedNewsFragment"
-            android:name="com.example.newsapi.ui.fragments.SavedNewsFragment"
+            android:name="com.example.newsapi.feature_news.ui.activity_main.fragments.SavedNewsFragment"
             android:label="Saved"
             tools:layout="@layout/fragment_saved_news" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
             android:id="@+id/articleFragment"
-            android:name="com.example.newsapi.ui.fragments.ArticleFragment"
+            android:name="com.example.newsapi.feature_news.ui.activity_main.fragments.ArticleFragment"
             android:label="fragment_article"
             tools:layout="@layout/fragment_article" >
         <argument
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
             android:id="@+id/categoriesFragment"
-            android:name="com.example.newsapi.ui.fragments.CategoriesFragment"
+            android:name="com.example.newsapi.feature_news.ui.activity_main.fragments.CategoriesFragment"
             android:label="fragment_categories"
             tools:layout="@layout/fragment_categories" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
             android:id="@+id/categoryListFragment"
-            android:name="com.example.newsapi.ui.fragments.CategoryListFragment"
+            android:name="com.example.newsapi.feature_news.ui.activity_main.fragments.CategoryListFragment"
             android:label="fragment_category_list"
             tools:layout="@layout/fragment_category_list" >
         <action

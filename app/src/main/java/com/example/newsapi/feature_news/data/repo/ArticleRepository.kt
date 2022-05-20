@@ -1,10 +1,10 @@
-package com.example.newsapi.db.repositories
+package com.example.newsapi.feature_news.data.repo
 
 import androidx.lifecycle.LiveData
-import com.example.newsapi.api.RetrofitInstance
-import com.example.newsapi.db.ArticleDatabase
-import com.example.newsapi.db.Entities.Article
-import com.example.newsapi.db.Entities.NewsResponse
+import com.example.newsapi.feature_news.data.api.RetrofitInstance
+import com.example.newsapi.feature_news.data.db.ArticleDatabase
+import com.example.newsapi.feature_news.data.entities.Article
+import com.example.newsapi.feature_news.data.entities.NewsResponse
 import retrofit2.Response
 
 class ArticleRepository(private val db: ArticleDatabase) {

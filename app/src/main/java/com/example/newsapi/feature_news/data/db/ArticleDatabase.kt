@@ -1,12 +1,11 @@
-package com.example.newsapi.db
+package com.example.newsapi.feature_news.data.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.example.newsapi.db.Entities.Article
-import com.google.android.play.core.install.model.AppUpdateType
+import com.example.newsapi.feature_news.data.entities.Article
 
 @Database(entities = [Article::class], version = 4)
 @TypeConverters(Converters::class)

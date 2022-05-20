@@ -1,8 +1,8 @@
-package com.example.newsapi.db
+package com.example.newsapi.feature_news.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.newsapi.db.Entities.Article
+import com.example.newsapi.feature_news.data.entities.Article
 
 @Dao
 interface ArticleDao {

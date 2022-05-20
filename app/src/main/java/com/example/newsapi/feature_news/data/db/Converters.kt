@@ -1,7 +1,7 @@
-package com.example.newsapi.db
+package com.example.newsapi.feature_news.data.db
 
 import androidx.room.TypeConverter
-import com.example.newsapi.db.Entities.Source
+import com.example.newsapi.feature_news.data.entities.Source
 
 class Converters {
         @TypeConverter

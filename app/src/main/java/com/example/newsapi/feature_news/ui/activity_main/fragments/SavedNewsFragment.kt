@@ -1,20 +1,18 @@
-package com.example.newsapi.ui.fragments
+package com.example.newsapi.feature_news.ui.activity_main.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapi.R
 import com.example.newsapi.adapters.ArticleListAdapter
-import com.example.newsapi.ui.ArticleViewModel
+import com.example.newsapi.feature_news.ui.ArticleViewModel
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.fragment_saved_news.*
 import kotlinx.android.synthetic.main.fragment_saved_news.view.*
 
 class SavedNewsFragment : Fragment() {

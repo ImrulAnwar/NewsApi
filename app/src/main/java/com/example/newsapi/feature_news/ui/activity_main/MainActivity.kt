@@ -1,16 +1,12 @@
-package com.example.newsapi.ui.activities
+package com.example.newsapi.feature_news.ui.activity_main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.newsapi.R
-import com.example.newsapi.db.Entities.Article
-import com.example.newsapi.ui.ArticleViewModel
+import com.example.newsapi.feature_news.ui.ArticleViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

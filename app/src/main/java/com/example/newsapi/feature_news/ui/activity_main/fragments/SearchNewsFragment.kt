@@ -1,7 +1,6 @@
-package com.example.newsapi.ui.fragments
+package com.example.newsapi.feature_news.ui.activity_main.fragments
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,8 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapi.R
 import com.example.newsapi.adapters.ArticleListAdapter
-import com.example.newsapi.ui.ArticleViewModel
-import com.example.newsapi.util.Constants
+import com.example.newsapi.feature_news.ui.ArticleViewModel
 import com.example.newsapi.util.Constants.Companion.QUERY_PAGE_SIZE
 import com.example.newsapi.util.Constants.Companion.SEARCH_DELAY
 import com.example.newsapi.util.Resource
